@@ -8,10 +8,10 @@ type Service interface {
 	FindBookById(id string) (*Book, error)
 
 	// Add new book
-	AddNewBook(book *Book) error
+	AddNewBook(book *BookSpec) error
 
 	// Modify Information book
-	ModifyBook(id string, bokk *BookSpec) error
+	ModifyBook(id string, book *BookSpec) error
 
 	// Delete book
 	DeleteBook(id string) error
